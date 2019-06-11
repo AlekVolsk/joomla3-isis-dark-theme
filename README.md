@@ -1,2 +1,3 @@
-# joomla3-isis-dark-theme
-Dark theme for Joomla!3 Isis template
+# Dark theme for Joomla!3 Isis template
+
+Copy the custom.css file to the `/administrator/templates/isis/css/`
