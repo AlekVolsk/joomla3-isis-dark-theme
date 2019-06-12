@@ -599,7 +599,7 @@ select:focus:invalid:focus {
 .dropdown-submenu:hover>a,
 .dropdown-submenu:focus>a {
 	color: var(--gray-b);
-	background-color: var(--highlight-2);
+	background-color: var(--highlight-2) !important;
 	background-image: none;
 }
 
@@ -948,7 +948,7 @@ select:focus:invalid:focus {
 .nav-list>.active>a:focus {
 	color: var(--gray-a);
 	text-shadow: none;
-	background-color: var(--highlight-5);
+	background-color: var(--highlight-5) !important;
 }
 
 .nav-list .divider {
