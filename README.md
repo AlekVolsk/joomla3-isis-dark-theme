@@ -1,6 +1,14 @@
 # Dark theme for Joomla!3 Isis template
 
-Copy the custom.css file to the `/administrator/templates/isis/css/`
+#### Install
+
+Copy the custom.css file to the `/administrator/templates/isis/css/`, and that's all, nothing more is needed.
+
+#### Disclamer
+
+Not everything has been redone, in particular, the calendar field and some other unobvious and rare interface elements have not been repainted.
+
+Overrides only the styles of the Isis template, affecting only the regular Joomla extensions in the administration panel. Any third-party extensions can impose their own styles that need to be separately redefined, and this will not be included in this topic.
 
 #### Screenshots
 
