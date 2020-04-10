@@ -2399,3 +2399,14 @@ input:focus,
 #sbox-content {
 	background-color: var(--gray-2);
 }
+
+
+/* com_ackeeba */
+
+.akeeba-renderer-fef {
+    background-color: var(--gray-2);
+}
+
+#akeeba-modal-container {
+    background-color: var(--gray-2);
+}
