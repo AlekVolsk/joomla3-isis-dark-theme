@@ -60,6 +60,8 @@
 	--highlight-5: rgba(0,0,0,.5);
 	
 	--striped: linear-gradient(45deg,rgba(255,255,255,0.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,0.15) 50%,rgba(255,255,255,0.15) 75%,transparent 75%,transparent);
+
+	--transition: .2s;
 }
 
 body {
@@ -69,6 +71,7 @@ body {
 
 a {
 	color: var(--link);
+	transition: color,background-color var(--transition) ease-out;
 }
 
 a:hover,
@@ -658,6 +661,7 @@ select:focus:invalid:focus {
 	background-color: var(--gray-4);
 	color: var(--gray-b);
 	border: 1px solid var(--gray-4);
+	transition: color,background-color,border-color var(--transition) ease-in-out;
 }
 
 .btn:hover,
@@ -2370,8 +2374,8 @@ input:focus,
 }
 
 .com_postinstall fieldset {
-	background-color: var(--gray-a);
-	border: 1px solid var(--highlight-1);
+	background-color: transparent;
+	border: 1px solid var(--gray-0);
 }
 
 .com_privacy .well {
