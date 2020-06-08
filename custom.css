@@ -1,6 +1,7 @@
 :root {
 	--gray-0: #000;
 	--gray-1: #111;
+	--gray-1-5: #181818;
 	--gray-2: #222;
 	--gray-3: #333;
 	--gray-4: #444;
@@ -61,7 +62,7 @@
 	
 	--striped: linear-gradient(45deg,rgba(255,255,255,0.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,0.15) 50%,rgba(255,255,255,0.15) 75%,transparent 75%,transparent);
 
-	--transition: .2s;
+	--transition: all .2s ease-out;
 }
 
 body {
@@ -71,7 +72,7 @@ body {
 
 a {
 	color: var(--link);
-	transition: color,background-color var(--transition) ease-out;
+	transition: var(--transition);
 }
 
 a:hover,
@@ -157,7 +158,7 @@ blockquote.pull-right {
 
 code {
 	color: var(--danger-text);
-	background-color: var(--gray-4);
+	background-color: var(--gray-2);
 	border: 1px solid var(--highlight-3);
 }
 
@@ -169,7 +170,7 @@ pre {
 
 legend {
 	color: var(--gray-a);
-	border-bottom: 1px solid var(--gray-9);
+	border-bottom: 1px solid var(--gray-5);
 }
 
 legend small {
@@ -323,7 +324,7 @@ textarea[disabled],
 input[readonly],
 select[readonly],
 textarea[readonly] {
-	background-color: var(--gray-6);
+	background-color: var(--gray-3);
 }
 
 input[type="radio"][disabled],
@@ -661,7 +662,7 @@ select:focus:invalid:focus {
 	background-color: var(--gray-4);
 	color: var(--gray-b);
 	border: 1px solid var(--gray-4);
-	transition: color,background-color,border-color var(--transition) ease-in-out;
+	transition: var(--transition);
 }
 
 .btn:hover,
@@ -851,6 +852,17 @@ select:focus:invalid:focus {
 .btn-inverse .caret {
 	border-top-color: var(--gray-b);
 	border-bottom-color: var(--gray-b);
+}
+
+.input-append .button-clear {
+    border-left: 1px solid var(--highlight-1);
+}
+
+.input-prepend .btn [class*="icon-"],
+.input-append .btn [class*="icon-"] {
+	position: relative;
+	top: 2px;
+	margin-right: 0;
 }
 
 .alert {
@@ -1721,6 +1733,7 @@ a.disabled:hover {
 .row-striped .row,
 .row-striped .row-fluid {
 	border-bottom: 1px solid var(--highlight-1);
+	transition: var(--transition);
 }
 
 .list-striped li:nth-child(odd),
@@ -2052,6 +2065,27 @@ div.modal {
 	.subform-table-layout tbody td:first-of-type {
 		border-top: 1px solid var(--highlight-2);
 	}
+}
+
+.subform-repeatable-group:nth-child(2n+1) {
+    background-color: var(--gray-2) !important;
+}
+
+.subform-repeatable-group:nth-child(2n) {
+    background-color: var(--gray-1-5) !important;
+}
+
+tr.subform-repeatable-group:hover td {
+    background: var(--gray-2) !important;
+}
+
+.subform-tabs > .nav.nav-tabs > li.active a {
+	background-color: var(--gray-1-5);
+}
+
+.subform-tabs > .tab-content > .tab-pane {
+    background-color: var(--gray-1-5);
+    border-color: var(--gray-3);
 }
 
 .header {
@@ -2387,7 +2421,7 @@ input:focus,
 }
 
 #menu-assignment .menu-links-block {
-	background-color: var(--gray-a);
+	background-color: var(--gray-3);
 	border: 1px solid var(--highlight-1);
 }
 
@@ -2402,6 +2436,11 @@ input:focus,
 #sbox-window,
 #sbox-content {
 	background-color: var(--gray-2);
+}
+
+.checkboxes {
+    border-color: var(--highlight-1);
+    background-color: var(--gray-3);
 }
 
 
